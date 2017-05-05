@@ -1,0 +1,14 @@
+<form class="navbar-form navbar-left">
+  <div class="form-group">
+    <label for="nome">Nome do produto: </label>
+    <input type="text" class="form-control"
+      name="nome" id="nome" [(ngModel)]="nomeProduto">
+
+    <label for="preco">Preco do produto: </label>
+    <input type="text" class="form-control"
+    name="preco" id="preco" [(ngModel)]="precoProduto">
+  </div>
+  <button type="submit" (click)="cadastrar()" class="btn btn-default">
+      Cadastrar
+  </button>
+</form>
